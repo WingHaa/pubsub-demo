@@ -13,6 +13,7 @@ export const pubsub = {
     //add an event with a name as new or to existing list
     this.events[evName] = this.events[evName] || [];
     this.events[evName].push(fn);
+    console.log(this.events);
   },
   unsubscribe: function(evName, fn) {
     console.log(`PUBSUB: someone just UNsubscribed from ${evName}`);
